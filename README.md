@@ -1,7 +1,7 @@
 # bts
 BHE Technical services website 
 
-## retrospective notes/to-do/improvements, from last projects
+## retrospective notes/to-do/improvements, from last project
 - Design was a pain point. The worst part, in fact, make steps to create a process.
 - Create & use common code snippets, using the snippets [extension](https://marketplace.visualstudio.com/items?itemName=inu1255.easy-snippet) mentioned in [syntax](https://syntax.fm/show/278/potluck-mdx-portfolio-projects-code-commenting-css-properties-reusable-components-more)
 - create a template/tutorial/process to implement dark mode using tailwind, on all sites going forward.
