@@ -38,5 +38,9 @@ BHE Technical services website
 - [TailwindCSS](http://tailwindcss.com/) for styling 
 - [Heroicons](https://heroicons.dev/) & [Feather icons](https://feathericons.com/) for icons
 - [ ] how to handle forms? 
+- [ ] how to get current page information from node? to help with conditionally styling the header 
+## reference sites
+- [cml](https://www.cml.uk.com/) - inspiring bits of design
+- [Coffman](https://www.coffman.com/) - nice sharp edges. icons feel a bit thin & lonely though. Mixture of rounded buttons with sharp surroundings not sitting well. Their services page is interesting though.
 
 
