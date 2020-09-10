@@ -36,7 +36,7 @@ BHE Technical services website
 # Website & dev notes
 - Will either go with [Gatsby](https://github.com/oddstronaut/gatsby-starter-tailwind) or [Next](https://github.com/oddstronaut/next-starter-tailwind).
 - [TailwindCSS](http://tailwindcss.com/) for styling 
-- [Heroicons](https://heroicons.dev/) & [Feather icons](https://feathericons.com/) for icons
+- [Heroicons](https://heroicons.dev/), [Feather icons](https://feathericons.com/), [Tablericons](https://tablericons.com/)
 - [ ] how to handle forms? 
 - [ ] how to get current page information from node? to help with conditionally styling the header 
 ## reference sites
