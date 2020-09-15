@@ -25,12 +25,12 @@ function SEO({ description, lang, meta, keywords, title }) {
       }}
       meta={[
         {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
           property: `og:title`,
           content: title,
+        },
+        {
+          name: `description`,
+          content: metaDescription,
         },
         {
           property: `og:description`,
