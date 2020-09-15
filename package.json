@@ -32,10 +32,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "dev": "npm run develop",
-    "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean && gatsby develop"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",

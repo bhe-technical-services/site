@@ -8,6 +8,7 @@ module.exports = {
     title: `BHE Technical Services`,
     description: `BHE Technical services' website`,
     author: `@txndai`,
+    image: `src/images/bhe-logo.jpg`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -15,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `bhe-technical-services`,
+        short_name: `bts`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.teal["400"],
