@@ -16,6 +16,7 @@ BHE Technical services website
 
 # Content Management
 - [GraphCMS](https://app.graphcms.com/) is being used as the CMS (Along with a build hook that triggers upon publishing of any new content, as seen on taz-store project)
+- Account details for this are in notion.
 - Product item schema: <br>
   ``` 
   {
@@ -34,13 +35,20 @@ BHE Technical services website
   ```
 
 # Website & dev notes
-- Will either go with [Gatsby](https://github.com/oddstronaut/gatsby-starter-tailwind) or [Next](https://github.com/oddstronaut/next-starter-tailwind).
+- Used this [Gatsby](https://github.com/oddstronaut/gatsby-starter-tailwind) starter.
 - [TailwindCSS](http://tailwindcss.com/) for styling 
 - [Heroicons](https://heroicons.dev/), [Feather icons](https://feathericons.com/), [Tablericons](https://tablericons.com/)
+- Netlify Auto Publishing has been disabled for this repo. To deploy master, run `npm run deploy` and the build file in `./hooks` will send the POST req.
 - [ ] how to handle forms? 
 - [ ] how to get current page information from node? to help with conditionally styling the header 
 ## reference sites
 - [cml](https://www.cml.uk.com/) - inspiring bits of design
 - [Coffman](https://www.coffman.com/) - nice sharp edges. icons feel a bit thin & lonely though. Mixture of rounded buttons with sharp surroundings not sitting well. Their services page is interesting though.
+## SEO component
+On the previous Gatsby site, I had issues with the seo component, specified [here](https://www.goosebumps.co.zw/react-helmet-struggle). <br>
+This repo has a working example, and it works in a similar manner. 
+- Default values are set in `gatsby-config.js`, it is getting the image from the static folder `./static/images/bhe-logo.jpg`.
+- The url set in `gatsby-config.js` must be changed with the domain name, manually🙄, if the SEO component is to work as intended.
+
 
 
