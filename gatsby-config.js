@@ -8,7 +8,8 @@ module.exports = {
     title: `BHE Technical Services`,
     description: `BHE Technical services' website`,
     author: `@txndai`,
-    image: `src/images/bhe-logo.jpg`,
+    image: "/images/bhe-logo.jpg",
+    url: "https://bts-dev.netlify.app",
   },
   plugins: [
     `gatsby-plugin-eslint`,

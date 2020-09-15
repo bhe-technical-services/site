@@ -2,8 +2,11 @@ import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
+// import { useLocation } from "@reach/router"
 
 function SEO({ description, lang, meta, keywords, title, image }) {
+  // const { pathname } = useLocation()
+
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
@@ -12,13 +15,16 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           description
           author
           defaultImage: image
+          siteUrl: url
         }
       }
     }
   `);
 
+  
+  const {siteUrl, defaultImage} = site.siteMetadata
   const metaDescription = description || site.siteMetadata.description;
-  const seoImage = image || site.siteMetadata.defaultImage;
+  const seoImage = `${siteUrl}${image || defaultImage}`;
 
   return (
     <Helmet
