@@ -18,6 +18,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
   `);
 
   const metaDescription = description || site.siteMetadata.description;
+  const seoImage = image || site.siteMetadata.defaultImage;
 
   return (
     <Helmet
@@ -59,15 +60,15 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           name: `image`,
-          content: image || site.siteMetadata.defaultImage,
+          content: seoImage,
         },
         {
           name: `og:image`,
-          content: image || site.siteMetadata.defaultImage,
+          content: seoImage,
         },
         {
           name: `twitter:image`,
-          content: image || site.siteMetadata.defaultImage,
+          content: seoImage,
         },
       ]
         .concat(
