@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "GT Fari <admin@goosebumps.co.zw>",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "2.24.58",
     "gatsby-plugin-manifest": "2.4.27",
     "gatsby-plugin-offline": "3.2.26",
@@ -31,6 +32,7 @@
     "fix": "npm run fix:lint && npm run fix:prettier",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "node ./hooks/build.js",
     "dev": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean && gatsby develop"
@@ -38,6 +40,7 @@
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",
     "autoprefixer": "9.8.6",
+    "axios": "^0.20.0",
     "babel-eslint": "10.1.0",
     "cssnano": "4.1.10",
     "eslint": "7.8.1",
