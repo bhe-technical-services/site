@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
           content: seoImage,
         },
         {
-          name: `og:image`,
+          property: `og:image`,
           content: seoImage,
         },
         {
