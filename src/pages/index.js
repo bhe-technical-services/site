@@ -10,6 +10,7 @@ function IndexPage() {
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
+        description="issa home page"
       />
 
       <section className="text-center">

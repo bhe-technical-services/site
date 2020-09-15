@@ -9,6 +9,7 @@ function ContactPage() {
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Contact"
+        description="this is the contact page"
       />
       <section>
         <form className="mx-auto md:w-1/2">

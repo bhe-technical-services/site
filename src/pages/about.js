@@ -10,6 +10,7 @@ function AboutPage() {
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="About"
+        description="this is the about page"
       />
 
       <section className="flex flex-col items-center md:flex-row">
