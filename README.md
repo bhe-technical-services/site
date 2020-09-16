@@ -38,7 +38,6 @@ BHE Technical services website
 - Used this [Gatsby](https://github.com/oddstronaut/gatsby-starter-tailwind) starter.
 - [TailwindCSS](http://tailwindcss.com/) for styling 
 - [Heroicons](https://heroicons.dev/), [Feather icons](https://feathericons.com/), [Tablericons](https://tablericons.com/)
-- Netlify Auto Publishing has been disabled for this repo. To deploy master, run `npm run deploy` and the build file in `./hooks` will send the POST req.
 - "Sometimes, you may want to push commits to your production branch without triggering a deploy on Netlify. To do this, add `[skip ci]` or `[skip netlify]` anywhere in the Git commit message." - [Netlify docs](https://docs.netlify.com/site-deploys/manage-deploys/#skip-a-deploy)
 - [ ] how to handle forms? 
 - [ ] how to get current page information from node? to help with conditionally styling the header 
