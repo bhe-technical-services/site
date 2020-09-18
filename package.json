@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@tailwindcss/ui": "^0.6.2",
+    "@tailwindui/react": "^0.1.1",
     "autoprefixer": "9.8.6",
     "axios": "^0.20.0",
     "babel-eslint": "10.1.0",

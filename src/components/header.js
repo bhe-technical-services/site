@@ -1,7 +1,9 @@
 // import { graphql, useStaticQuery, Link } from "gatsby";
-import React from "react";
+import React, { useState } from "react";
+import { Transition } from '@tailwindui/react'
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false)
   // const [isExpanded, toggleExpansion] = useState(false);
   // const { site } = useStaticQuery(graphql`
   //   query SiteTitleQuery {
@@ -23,7 +25,7 @@ function Header() {
                             <img className="w-auto h-8 sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Logo"/>
                         </a>
                         <div className="flex items-center -mr-2 md:hidden">
-                            <button type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" id="main-menu" aria-label="Main menu" aria-haspopup="true">
+                            <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" id="main-menu" aria-label="Main menu" aria-haspopup="true">
                             <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
@@ -50,30 +52,40 @@ function Header() {
                     From: "opacity-100 scale-100"
                     To: "opacity-0 scale-95" */}
 
-                <header className="absolute inset-x-0 top-0 z-20 p-2 transition origin-top-right transform md:hidden">
-                    <div className="rounded-lg shadow-md">
-                    <div className="overflow-hidden bg-white rounded-lg shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-                        <div className="flex items-center justify-between px-5 pt-4">
-                        <div>
-                            <img className="w-auto h-8" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt=""/>
+                <Transition
+                show={isOpen}
+                enter="duration-150 ease-out"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="duration-100 ease-in"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+                >
+                    <header className="absolute inset-x-0 top-0 z-20 p-2 transition origin-top-right transform md:hidden">
+                        <div className="rounded-lg shadow-md">
+                        <div className="overflow-hidden bg-white rounded-lg shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                            <div className="flex items-center justify-between px-5 pt-4">
+                            <div>
+                                <img className="w-auto h-8" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt=""/>
+                            </div>
+                            <div className="-mr-2">
+                                <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" aria-label="Close menu">
+                                    <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            </div>
+                                <div className="px-2 pt-2 pb-3 ">
+                                    <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Product</a>
+                                    <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Features</a>
+                                    <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Marketplace</a>
+                                    <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Company</a>
+                                </div>
                         </div>
-                        <div className="-mr-2">
-                            <button type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" aria-label="Close menu">
-                                <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
                         </div>
-                        </div>
-                        <div className="px-2 pt-2 pb-3 ">
-                            <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Product</a>
-                            <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Features</a>
-                            <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Marketplace</a>
-                            <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Company</a>
-                        </div>
-                    </div>
-                    </div>
-                </header>
+                    </header>
+                </Transition>
     </>
   );
 }
