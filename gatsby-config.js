@@ -15,17 +15,26 @@ module.exports = {
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: `bhe-technical-services`,
-        short_name: `bts`,
-        start_url: `/`,
-        background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
-        display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `bhe-technical-services`,
+    //     short_name: `bts`,
+    //     start_url: `/`,
+    //     background_color: fullConfig.theme.colors.white,
+    //     theme_color: fullConfig.theme.colors.teal["400"],
+    //     display: `minimal-ui`,
+    //     icon: `src/images/tailwind-icon.png`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
