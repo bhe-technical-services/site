@@ -23,18 +23,18 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `bhe-technical-services`,
-    //     short_name: `bts`,
-    //     start_url: `/`,
-    //     background_color: fullConfig.theme.colors.white,
-    //     theme_color: fullConfig.theme.colors.teal["400"],
-    //     display: `minimal-ui`,
-    //     icon: `src/images/tailwind-icon.png`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `bhe-technical-services`,
+        short_name: `bts`,
+        start_url: `/`,
+        background_color: fullConfig.theme.colors.white,
+        theme_color: fullConfig.theme.colors.teal["400"],
+        display: `minimal-ui`,
+        icon: `src/images/bhe-logo-removebg.png`,
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

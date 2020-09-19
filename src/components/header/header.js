@@ -1,8 +1,11 @@
 // import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
 import { Transition } from '@tailwindui/react'
-import icon from '../images/bhe-logo.jpg'
+import icon from '../../images/bhe-logo-removebg.png'
+import {navLinks} from './navLinks'
+import {Link} from 'gatsby'
 
+console.log(navLinks)
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
   // const [isExpanded, toggleExpansion] = useState(false);
@@ -22,9 +25,9 @@ function Header() {
                     <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
                     <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                         <div className="flex items-center justify-between w-full md:w-auto">
-                        <a href="#" aria-label="Home">
+                        <Link to="/" aria-label="Home">
                             <img className="w-auto h-8 sm:h-10" src={icon} alt="BHE Logo"/>
-                        </a>
+                        </Link>
                         <div className="flex items-center -mr-2 md:hidden">
                             <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" id="main-menu" aria-label="Main menu" aria-haspopup="true">
                             <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -35,11 +38,9 @@ function Header() {
                         </div>
                     </div>
                     <div className="hidden md:block md:ml-10 md:pr-4">
-                        <a href="#" className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">Product</a>
-                        <a href="#" className="ml-8 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">Features</a>
-                        <a href="#" className="ml-8 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">Marketplace</a>
-                        <a href="#" className="ml-8 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">Company</a>
-                        <a href="#" className="ml-8 font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-900">Log in</a>
+                        {navLinks.map(({name, path}) => (
+                            <Link to={path} key={path} className="mr-8 font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">{name}</Link>
+                        ))}
                     </div>
                     </nav>
                 </header>
@@ -66,9 +67,9 @@ function Header() {
                         <div className="rounded-lg shadow-md">
                         <div className="overflow-hidden bg-white rounded-lg shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                             <div className="flex items-center justify-between px-5 pt-4">
-                            <div>
+                            <Link to="/" aria-label="Home">
                                 <img className="w-auto h-8" src={icon} alt="BHE logo"/>
-                            </div>
+                            </Link>
                             <div className="-mr-2">
                                 <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" aria-label="Close menu">
                                     <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -78,10 +79,9 @@ function Header() {
                             </div>
                             </div>
                                 <div className="px-2 pt-2 pb-3 ">
-                                    <a href="#" className="block px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Product</a>
-                                    <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Features</a>
-                                    <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Marketplace</a>
-                                    <a href="#" className="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50" role="menuitem">Company</a>
+                                {navLinks.map(({name, path}) => (
+                                    <Link to={path} key={path} className="block px-3 py-2 mb-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">{name}</Link>
+                                ))}
                                 </div>
                         </div>
                         </div>

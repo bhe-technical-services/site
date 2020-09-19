@@ -1,7 +1,7 @@
 /* eslint react/prop-types: 0 */
 import React from 'react'
 // import hero from '../images/hero.jpg'
-import Header from './header'
+import Header from './header/header'
 // import {Link} from 'gatsby'
 import Img from 'gatsby-image'
 import {  graphql , useStaticQuery} from "gatsby"
