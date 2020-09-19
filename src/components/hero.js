@@ -28,10 +28,10 @@ function Hero() {
     console.log(data)
     
     return (
-        <div className="relative overflow-hidden bg-white lg:min-h-screen">
+        <div className="relative overflow-hidden bg-off-white lg:min-h-screen">
             <div className="max-w-screen-xl mx-auto">
-                <div className="relative z-10 pb-8 bg-white lg:min-h-screen sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                <svg className="absolute inset-y-0 right-0 hidden w-56 h-full text-white transform translate-x-1/2 lg:block" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <div className="relative z-10 pb-8 bg-off-white lg:min-h-screen sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <svg className="absolute inset-y-0 right-0 hidden w-56 h-full transform translate-x-1/2 text-off-white lg:block" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon points="50,0 100,0 50,100 0,100" />
                 </svg>
 
@@ -39,12 +39,12 @@ function Hero() {
 
                 <main className="max-w-screen-xl px-4 pt-10 mx-auto sm:pt-12 sm:px-6 md:pt-16 lg:pt-28 lg:px-8 xl:pt-36">
                     <div className="sm:text-center lg:text-left">
-                    <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                    <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-writing-black sm:text-5xl sm:leading-none md:text-6xl">
                         BHE Technical
                         <br className="xl:hidden"/>
-                        <span className="text-indigo-600">services</span>
+                        <span className="text-primary-green-600">services</span>
                     </h2>
-                    <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    <p className="mt-3 text-base text-writing-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                         Provision of equipement, spares and engineering services to the mining, industrial and agricultural sectors in the Sub-Saharan Region.
                     </p>
                     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
