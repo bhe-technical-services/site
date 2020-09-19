@@ -39,7 +39,7 @@ function Hero() {
 
                 <main className="max-w-screen-xl px-4 pt-10 mx-auto sm:pt-12 sm:px-6 md:pt-16 lg:pt-28 lg:px-8 xl:pt-36">
                     <div className="sm:text-center lg:text-left">
-                    <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-writing-black sm:text-5xl sm:leading-none md:text-6xl">
+                    <h2 className="main-heading">
                         BHE Technical
                         <br className="xl:hidden"/>
                         <span className="text-primary-green-600">services</span>
