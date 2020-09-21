@@ -62,7 +62,7 @@ function IndexPage() {
             </span>
           </div>
           <div id="image-wrapper" className='relative'>
-            {/* <img className='transform -skew-y-12' src="https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt=""/> */}
+            <img className='transform -skew-y-12' src="https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt=""/>
           </div>
         </div>
       </section>
