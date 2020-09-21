@@ -5,7 +5,7 @@ import Logo from '../images/bhe-logo-removebg.png'
 
 function Footer() {
     return (
-      <footer className="">
+      <footer className="text-writing-black">
         <nav className="flex items-center justify-between max-w-6xl p-4 mx-auto text-sm ">
           <span className='flex flex-row items-center space-x-4'>
             <Link to="/">
