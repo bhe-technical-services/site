@@ -45,7 +45,7 @@ function Hero() {
                             <span className="text-primary-green-600">services</span>
                         </h2>
                         <p className="mt-3 text-base text-writing-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                            Provision of equipement, spares and engineering services to the mining, industrial and agricultural sectors in the Sub-Saharan Region.
+                            Provision of equipment, spares and engineering services to the mining, industrial and agricultural sectors in the Sub-Saharan Region.
                         </p>
                         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                             <PrimaryButton  path='/products' text="Products"/>
@@ -55,7 +55,7 @@ function Hero() {
                     </main>
                 </div>
             </div>
-            <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-flat-gray">
                 <Img className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" fixed={data.file.childImageSharp.fluid} alt="Hero image"/>
             </div>
         </div>
