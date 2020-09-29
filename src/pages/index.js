@@ -5,6 +5,7 @@ import Hero from "../components/hero";
 import SEO from "../components/seo";
 import Customers from '../components/Home/customers'
 import Agencies from '../components/Home/agencies'
+import Why from '../components/Home/why'
 // import Feature from '../components/buttons/PrimaryButton'
 
 function IndexPage() {
@@ -17,6 +18,7 @@ function IndexPage() {
       />
       <Hero/>
       <Customers/>
+      <Why/>
       <Agencies/>
       
 

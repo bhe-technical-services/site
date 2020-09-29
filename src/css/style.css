@@ -4,5 +4,6 @@
 section{@apply flex flex-col items-center justify-center py-15;}
 .bullseye{@apply flex flex-col items-center justify-center;}
 .main-heading{@apply text-4xl font-extrabold leading-10 tracking-tight text-writing-black sm:text-5xl sm:leading-none md:text-6xl;}
+.sub-heading{@apply mb-2 text-2xl font-medium;}
 /*! purgecss end ignore */
 @tailwind utilities;

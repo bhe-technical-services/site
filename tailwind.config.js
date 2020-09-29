@@ -16,9 +16,11 @@ module.exports = {
       '3/4': '75%',
       '4/5': '75%',
       'full': '100%',
+      '19rem': '19rem',
       'screen': '100vh',
     },
     extend: {
+
       colors: {
         'writing-black' : '#212121',
         'writing-gray' : '#757575',

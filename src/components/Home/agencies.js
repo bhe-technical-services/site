@@ -13,7 +13,7 @@ function agencies() {
                 </div>
                 <div id="festo-text-wrapper" className='mt-20 text-left bullseye md:w-1/2 md:mt-5'>
                     <span className='px-10 md:px-13 lg:px-32'>
-                    <h1 className='mb-2 text-2xl font-medium'>Festo</h1>
+                    <h1 className='sub-heading'>Festo</h1>
                     <p className='text-flat-gray'>Provision of equipment, spares and engineering services to the mining, industrial and agricultural sectors in the Sub-Saharan Region.</p>
                     </span>
                 </div>
@@ -22,8 +22,8 @@ function agencies() {
             <div id="voith-wrapper" className='flex flex-col-reverse mb-10 md:flex-row-reverse py-15'>
                 <div id="voith-text-wrapper" className='mt-20 text-left bullseye md:w-1/2 md:mt-5'>
                     <span className='px-10 md:px-13 lg:px-32'>
-                    <h1 className='mb-2 text-2xl font-medium'>Voith</h1>
-                    <p className='text-flat-gray'>Provision of equipment, spares and engineering services to the mining, industrial and agricultural sectors in the Sub-Saharan Region.</p>
+                    <h1 className='sub-heading'>Voith</h1>
+                    <p className='text-flat-gray'>Having a highly efficient and reliable drive system increases production and provides peace of mind. Whether you require fluid couplings or a customized drive package, Voith is your partner of choice. We assist you in gently accelerating your driven machine, owing to the hydrodynamic principle, thereby extending the life time of your system. At the same time, torque is limited, load sharing is facilitated and torsional vibrations are dampened. The coupling protects the drive system from damage even under extreme operating conditions, reducing downtime and ensuring a continuous production process.</p>
                     </span>
                 </div>
                 <div id="image-wrapper" className='relative md:w-1/2'>
