@@ -9,7 +9,7 @@ function agencies() {
 
             <div id="Festo-wrapper" className='flex flex-col mb-10 md:flex-row-reverse py-15'>
                 <div id="image-wrapper" className='relative md:w-1/2'>
-                    <img className='object-cover w-full h-56 transform -skew-y-12 border-b-4 shadow-md border-primary-green-400 sm:h-72 md:h-80 lg:w-full lg:h-full' src={festo} alt="Festo Equipment"/>
+                    <img className='object-cover w-full h-56 transform -skew-y-6 border-b-4 shadow-md border-primary-green-400 sm:h-72 md:h-80 lg:w-full lg:h-full' src={festo} alt="Festo Equipment"/>
                 </div>
                 <div id="festo-text-wrapper" className='mt-20 text-left bullseye md:w-1/2 md:mt-5'>
                     <span className='px-10 md:px-13 lg:px-32'>
@@ -27,7 +27,7 @@ function agencies() {
                     </span>
                 </div>
                 <div id="image-wrapper" className='relative md:w-1/2'>
-                    <img className='object-cover w-full h-56 transform -skew-y-12 border-b-4 shadow-md border-primary-green-400 sm:h-72 md:h-80 lg:w-full lg:h-full' src={voith} alt=""/>
+                    <img className='object-cover w-full h-56 transform -skew-y-6 border-b-4 shadow-md border-primary-green-400 sm:h-72 md:h-80 lg:w-full lg:h-full' src={voith} alt=""/>
                 </div>
             </div>
 
