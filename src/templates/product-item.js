@@ -10,7 +10,7 @@ function ProductPage({data: { gcms: { product },},}) {
 
   return(
   <Layout>
-  <section className="overflow-hidden text-gray-500 shadow-xl body-font">
+  <section className="overflow-hidden text-gray-500 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap mx-auto lg:w-4/5">
       <img alt={product.name} className="object-cover object-center w-full h-64 rounded lg:w-1/2 lg:h-auto" src={product.image[0].node.childImageSharp.fluid.src}/>
