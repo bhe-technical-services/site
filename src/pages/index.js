@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/HomeLayout";
 import Hero from "../components/hero";
 import SEO from "../components/seo";
 import Customers from '../components/Home/customers'

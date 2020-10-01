@@ -1,3 +1,7 @@
+// graphCMS needs this dotenv require, also make sure to use .env.dev, .env didn't work
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 const resolveConfig = require("tailwindcss/resolveConfig");
 const tailwindConfig = require("./tailwind.config.js");
 
@@ -23,6 +27,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `GraphCMS`,
+        fieldName: `gcms`,
+        url: process.env.GRAPHCMS_URL,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
