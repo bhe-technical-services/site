@@ -1,4 +1,6 @@
 import React from 'react'
+import VestDude from '../../images/vest-dude.png'
+import HelmetDude from '../../images/helmet-dude.png'
 
 function why() {
     return (
@@ -8,7 +10,7 @@ function why() {
             <div className='flex flex-col p-10 space-y-24'>
                 <div className="relative items-center bg-gray-100 shadow-xl md:flex min-h-19rem" >
                     <div className="relative w-full overflow-hidden md:w-2/5 min-h-19rem" >
-                        <img className="absolute inset-0 object-cover object-center w-full h-full" src="https://images.unsplash.com/photo-1601278840447-9af5ac4ed157?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt=""/>
+                        <img className="absolute inset-0 object-cover object-center w-full h-full" src={VestDude} alt=""/>
                     </div>
                     <div className="flex items-center w-full h-full bg-gray-100 md:w-3/5">
                         <div className="p-12 md:pr-24 md:pl-16 md:py-12">
@@ -26,7 +28,7 @@ function why() {
                 </div>
                 <div className="relative items-center bg-gray-100 shadow-xl md:flex md:flex-row-reverse min-h-19rem" >
                     <div className="relative w-full overflow-hidden md:w-2/5 min-h-19rem" >
-                        <img className="absolute inset-0 object-cover object-center w-full h-full" src="https://images.unsplash.com/photo-1601278840447-9af5ac4ed157?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt=""/>
+                        <img className="absolute inset-0 object-cover object-center w-full h-full" src={HelmetDude} alt=""/>
                     </div>
                     <div className="flex flex-row-reverse items-center w-full h-full bg-gray-100 md:w-3/5">
                         <div className="p-12 md:pr-24 md:pl-16 md:py-12">
