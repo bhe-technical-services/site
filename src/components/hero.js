@@ -8,7 +8,7 @@ import {  graphql , useStaticQuery} from "gatsby"
 import PropTypes from 'prop-types';
 // import Feature from "./buttons/PrimaryButton"
 import PrimaryButton from "./buttons/PrimaryButton"
-import SecondaryButton from "./buttons/SecondaryButton"
+// import SecondaryButton from "./buttons/SecondaryButton"
 
 
 
@@ -28,7 +28,7 @@ function Hero() {
     console.log(data)
     
     return (
-        <div className="relative overflow-hidden bg-off-white lg:min-h-screen">
+        <div className="relative min-h-screen overflow-hidden bg-off-white">
             <div className="max-w-screen-xl mx-auto">
                 <div className="relative z-10 pb-8 bg-off-white lg:min-h-screen sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
                     <svg className="absolute inset-y-0 right-0 hidden w-56 h-full transform translate-x-1/2 text-off-white lg:block" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -49,13 +49,13 @@ function Hero() {
                         </p>
                         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                             <PrimaryButton  path='/products' text="Products"/>
-                            <SecondaryButton path='/services' text="Services"/>
+                            {/* <SecondaryButton path='/about' text="About"/> */}
                         </div>
                         </div>
                     </main>
                 </div>
             </div>
-            <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-flat-gray">
+            <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 sm:bg-flat-gray">
                 <Img className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full" fixed={data.file.childImageSharp.fluid} alt="Hero image"/>
             </div>
         </div>
