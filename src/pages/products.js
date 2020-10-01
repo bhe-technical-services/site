@@ -15,7 +15,7 @@ function Products() {
             <div className='flex flex-wrap '>
                     {productCategories.map((category) => (
                         <div className="w-full p-4 lg:w-1/4 md:w-1/2" key={category.slug}>
-                            <Link to={category.slug} className="relative block h-48 overflow-hidden rounded">
+                            <Link to={`/products/categories/${category.slug}`} className="relative block h-48 overflow-hidden rounded">
                                 <Img className="block object-cover object-center w-full h-full" fluid={category.featureImage.node.childImageSharp.fluid} />
                             </Link>
                                 <div className="mt-4">
