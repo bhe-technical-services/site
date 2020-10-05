@@ -1,6 +1,7 @@
 import React from 'react'
 import VestDude from '../../images/vest-dude.png'
 import HelmetDude from '../../images/helmet-dude.png'
+import { Link } from 'gatsby'
 
 function why() {
     return (
@@ -16,10 +17,10 @@ function why() {
                         <div className="p-12 md:pr-24 md:pl-16 md:py-12">
                             <h2 className='sub-heading'>Experience</h2>
                             <p className="text-gray-600">BHE TECHNICAL SERVICES (PVT) LTD was incorporated in 1997, and started trading in Zimbabwe in 2002.</p>
-                            <a className="flex items-baseline mt-3 text-primary-green-600 hover:text-primary-green-900 focus:text-primary-green-900" href="">
+                            <Link to='/about' className="flex items-baseline mt-3 text-primary-green-600 hover:text-primary-green-900 focus:text-primary-green-900" href="">
                                 <span>Learn more about our work</span>
                                 <span className="ml-1 text-xs">&#x279c;</span>
-                            </a>
+                            </Link>
                         </div>
                         <svg className="absolute inset-y-0 hidden w-24 h-full -ml-12 text-gray-100 fill-current md:block" viewBox="0 0 100 100" preserveAspectRatio="none">
                             <polygon points="50,0 100,0 50,100 0,100" />
@@ -34,10 +35,10 @@ function why() {
                         <div className="p-12 md:pr-24 md:pl-16 md:py-12">
                             <h2 className='sub-heading'>Scalable Team</h2>
                             <p className="text-gray-600">Contract workers on standby, to flexibly cater for your needs.</p>
-                            <a className="flex items-baseline mt-3 text-primary-green-600 hover:text-primary-green-900 focus:text-primary-green-900" href="">
+                            <Link to='/about' className="flex items-baseline mt-3 text-primary-green-600 hover:text-primary-green-900 focus:text-primary-green-900" href="">
                                 <span>Learn more about our work</span>
                                 <span className="ml-1 text-xs">&#x279c;</span>
-                            </a>
+                            </Link>
                         </div>
                         <svg className="absolute inset-y-0 hidden w-24 h-full -mr-12 text-gray-100 fill-current md:block" viewBox="0 0 100 100" preserveAspectRatio="none">
                             <polygon points="50,0 100,0 50,100 0,100" />

@@ -15,7 +15,7 @@ function customers() {
     <div className="container px-5 py-24 mx-auto">
         <div className="mb-20 text-center">
         <h2 className='mb-5 text-center md:mb-10 main-heading text-off-white'>Major Customers</h2>
-        <p className="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4">With our diversity of products and services, BHE has proven capacity to supply multiple industries, such as:</p>
+        <p className="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4">With our diversity of products and services, BHE has proven capacity to supply multiple industries, such as</p>
         </div>
         <div className="flex flex-wrap -mx-2 lg:w-4/5 sm:mx-auto sm:mb-2">
             {theOans.map(({name, icon}) => (

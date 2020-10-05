@@ -13,7 +13,7 @@ function AboutPage() {
         description="this is the about page"
       />
 
-      <section className="relative px-0 py-20 xl:px-20 min-w-screen animation-fade animation-delay">
+      <section className="relative px-0 pt-20 pb-0 xl:px-20 min-w-screen animation-fade animation-delay">
           <div className="container px-10 mx-auto sm:px-0">
               <div className="sm:flex">
                   <div className="flex-1 mr-12">
@@ -21,7 +21,7 @@ function AboutPage() {
                       <div className="mt-10">
                           <div className="flex">
                               <div className="flex-shrink">
-                                  <CheckSquare className="w-10 stroke-current text-primary-green-500"/>
+                                  <CheckSquare className="w-10 mt-2 stroke-current text-primary-green-500"/>
                               </div>
                               <div className="flex-grow ml-5">
                                   <div className="sub-heading">Experience</div>
@@ -35,7 +35,7 @@ function AboutPage() {
                           </div>
                           <div className="flex mt-5">
                               <div className="flex-shrink">
-                                <CheckSquare className="w-10 stroke-current text-primary-green-500"/>
+                                <CheckSquare className="w-10 mt-2 stroke-current text-primary-green-500"/>
                               </div>
                               <div className="flex-grow ml-5">
                                   <div className="sub-heading">Scalable Team</div>
@@ -46,15 +46,6 @@ function AboutPage() {
                                     installations or any engineering related work within our scope
                                     that may arise at any given time.
                                   </p>
-                              </div>
-                          </div>
-                          <div className="flex mt-5">
-                              <div className="flex-shrink">
-                                <CheckSquare className="w-10 stroke-current text-primary-green-500"/>
-                              </div>
-                              <div className="flex-grow ml-5">
-                                  <div className="sub-heading">sub-heading</div>
-                                  <p className="mt-5 leading-7 text-gray-700 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                               </div>
                           </div>
                       </div>
