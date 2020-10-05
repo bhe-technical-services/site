@@ -1,5 +1,5 @@
 import React from "react";
-import {CheckSquare} from 'react-feather'
+import {Clock, Maximize2} from 'react-feather'
 import Team from "../components/About/team";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -17,14 +17,14 @@ function AboutPage() {
           <div className="container px-10 mx-auto sm:px-0">
               <div className="sm:flex">
                   <div className="flex-1 mr-12">
-                      <div className="main-heading">Get to know us more</div>
+                      <h1 className="main-heading">Get to know us more</h1>
                       <div className="mt-10">
                           <div className="flex">
                               <div className="flex-shrink">
-                                  <CheckSquare className="w-10 mt-2 stroke-current text-primary-green-500"/>
+                                  <Clock className="w-10 mt-2 stroke-current text-primary-green-500"/>
                               </div>
                               <div className="flex-grow ml-5">
-                                  <div className="sub-heading">Experience</div>
+                                  <h2 className="sub-heading">Experience</h2>
                                   <p className="mt-5 leading-7 text-gray-700 text-md">
                                       BHE is a Zimbabwean engineering service, based in Bulawayo. We have been in operation since 2002, 
                                       giving us 18 years of experience as a leading-edge player in our field. We have a dedicated staff of  
@@ -35,10 +35,10 @@ function AboutPage() {
                           </div>
                           <div className="flex mt-5">
                               <div className="flex-shrink">
-                                <CheckSquare className="w-10 mt-2 stroke-current text-primary-green-500"/>
+                                <Maximize2 className="w-10 mt-2 stroke-current text-primary-green-500"/>
                               </div>
                               <div className="flex-grow ml-5">
-                                  <div className="sub-heading">Scalable Team</div>
+                                  <h2 className="sub-heading">Scalable Team</h2>
                                   <p className="mt-5 leading-7 text-gray-700 text-md">
                                     The Fitter and Boilermaker and their assistants are contract workers,
                                     participating only when the company has maintenance or project

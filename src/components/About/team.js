@@ -10,7 +10,7 @@ function team() {
                 <div className="flex flex-wrap -m-4">
                 <div className="p-4 lg:w-1/2">
                     <div className="flex flex-col items-center justify-center h-full text-center sm:flex-row sm:justify-start sm:text-left">
-                    <img alt="team" className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 sm:mb-0" src="https://dummyimage.com/200x200"/>
+                    <img alt="team" className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 border-r-4 shadow-lg border-primary-green-500 sm:mb-0" src="https://images.unsplash.com/photo-1529688530647-93a6e1916f5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80"/>
                     <div className="flex-grow sm:pl-8">
                         <h2 className="text-lg font-medium text-gray-900 title-font">Collin Bhebhe</h2>
                         <h3 className="mb-3 text-writing-gray">Operations Director</h3>
@@ -40,7 +40,7 @@ function team() {
                 </div>
                 <div className="p-4 lg:w-1/2">
                     <div className="flex flex-col items-center justify-center h-full text-center sm:flex-row sm:justify-start sm:text-left">
-                    <img alt="team" className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 sm:mb-0" src="https://dummyimage.com/201x201"/>
+                    <img alt="team" className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 border-r-4 shadow-lg border-primary-green-500 sm:mb-0" src="https://images.unsplash.com/photo-1517256742927-ccff23d76be8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"/>
                     <div className="flex-grow sm:pl-8">
                         <h2 className="text-lg font-medium text-gray-900 title-font">Sithembile Bhebhe</h2>
                         <h3 className="mb-3 text-writing-gray">Finance and Admin Director</h3>
