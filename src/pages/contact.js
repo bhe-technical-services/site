@@ -1,4 +1,5 @@
 import React from "react";
+import { Mail, MapPin, MessageSquare, Phone } from "react-feather";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -11,68 +12,62 @@ function ContactPage() {
         title="Contact"
         description="this is the contact page"
       />
-      <section>
-        <form className="mx-auto md:w-1/2">
-          <p className="mb-8 leading-loose">
-            Here is an example of a form built using the official Tailwind CSS
-            Custom Forms plugin.{` `}
-            <a
-              className="font-bold text-gray-700 no-underline"
-              href="https://github.com/tailwindcss/custom-forms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read the docs
-            </a>
-            .
-          </p>
-
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="first-name"
-          >
-            First Name
-          </label>
-
-          <input
-            className="w-full mb-6 form-input"
-            id="first-name"
-            placeholder="Bill"
-            type="text"
-          />
-
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="last-name"
-          >
-            Last Name
-          </label>
-
-          <input
-            className="w-full mb-6 form-input"
-            id="last-name"
-            placeholder="Murray"
-            type="text"
-          />
-
-          <label
-            className="block mb-2 text-xs font-bold uppercase"
-            htmlFor="message"
-          >
-            Message
-          </label>
-
-          <textarea
-            className="w-full mb-6 form-textarea"
-            id="message"
-            placeholder="Say something..."
-            rows="8"
-          />
-
-          <button className="px-4 py-2 text-sm font-bold text-white bg-gray-700 border-b-4 border-gray-800 rounded hover:border-gray-700 hover:bg-gray-600">
-            Submit
-          </button>
-        </form>
+      <section className="relative py-6 md:pt-20 min-w-screen animation-fade animation-delay">
+        <div className="container h-full max-w-5xl mx-auto overflow-hidden sm:shadow">
+            <div className="h-full sm:flex">
+                <aside className="w-full p-10 rounded-none sm:rounded md:w-1/3 sm:bg-primary-green-300">
+                    <h2 className="text-2xl font-extrabold leading-8 tracking-tight text-writing-black sm:text-2xl sm:leading-9">Contact Us</h2>
+                    <p className="mt-2 mb-5 text-sm text-gray-600">You can find our contact info below or you can feel free to leave us a quick message in the form.</p>
+                    <div className="flex items-start py-3 pt-5">
+                        <div className="flex-shrink">
+                          <Phone className="w-8 h-8 mt-1 text-gray-700"/>
+                        </div>
+                        <div className="flex-grow ml-10 md:ml-5">
+                            <div className="text-base font-medium mb-">Phone</div>
+                            <span className="text-gray-500 text-md"> <a href="tel:+263292886611">+263 (292) 886 611</a></span><br/>
+                            <span className="text-gray-500 text-md"> <a href="tel:+263292881070">+263 (292) 881 070</a></span>
+                        </div>
+                    </div>
+                    <div className="flex items-start py-3 pt-5">
+                        <div className="flex-shrink">
+                          <Mail className="w-8 h-8 mt-1 text-gray-700"/>
+                        </div>
+                        <div className="flex-grow ml-10 md:ml-5">
+                            <div className="text-base font-medium mb-">Email</div>
+                            <span className="text-gray-500 text-md"> <a href="mailto:sales@bhe.co.zw">sales@bhe.co.zw</a></span>
+                        </div>
+                    </div>
+                    <div className="flex items-start py-3">
+                        <div className="flex-shrink">
+                            <MapPin className="w-8 h-8 mt-1 text-gray-700"/>
+                        </div>
+                        <div className="flex-grow ml-10 md:ml-5">
+                            <div className="text-base font-medium">Address</div>
+                            <span className="text-gray-500 text-md">6 Birmingham Rd, Belmont, Bulawayo, Zimbabwe</span>
+                        </div>
+                    </div>
+                </aside>
+                <div className="flex items-center justify-center w-full p-10 bg-white md:w-2/3">
+                    <form className="w-full" onSubmit="return false">
+                        <div className="pb-3">
+                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Email Address" name="email" value="" />
+                        </div>
+                        <div className="py-3">
+                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Subject" name="subject" value="" />
+                        </div>
+                        <div className="py-3">
+                            <textarea row="4" className="w-full h-40 px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" name="message" placeholder="Your message here..."></textarea>
+                        </div>
+                        <div className="pt-3">
+                            <button className="flex items-center justify-center w-full px-6 py-2 text-lg font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent md:w-2/6 bg-primary-green-500 hover:bg-primary-green-600 focus:outline-none focus:border-primary-green-700 focus:shadow-outline-green md:py-3 md:text-lg md:px-8" type="submit">
+                                <MessageSquare/>
+                                <span className="self-center float-left ml-3 text-base font-medium"> Message</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
       </section>
     </Layout>
   );
