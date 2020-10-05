@@ -54,10 +54,10 @@ function ContactPage() {
                             <input type="hidden" name="form-name" value="contact" />
                         </>
                         <div className="pb-3">
-                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Name" name="name"/>
+                            <input className="" type="text" placeholder="Name" name="name"/>
                         </div>
                         <div className="py-3">
-                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Email" name="email"/>
+                            <input className="" type="text" placeholder="Email" name="email"/>
                         </div>
                         <div className="py-3">
                             <textarea row="4" className="w-full h-40 px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" name="message" placeholder="Your message here..."></textarea>
