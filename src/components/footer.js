@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {Facebook, Twitter, Linkedin} from 'react-feather'
+import WhatsApp from './icons/whatsapp.js'
 import Logo from '../images/bhe-logo-removebg.png'
 
 function Footer() {
@@ -15,6 +16,9 @@ function Footer() {
           </span>
 
           <span className='flex flex-row items-center space-x-4'>
+            <a className="font-bold no-underline" href="https://wa.me/263773417407" target="_blank" rel="noopener noreferrer">
+              <WhatsApp/>
+            </a>
             <a className="font-bold no-underline" href="https://github.com/txndai/bts" target="_blank" rel="noopener noreferrer">
               <Facebook className='w-5'/>
             </a>
