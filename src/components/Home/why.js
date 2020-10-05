@@ -16,7 +16,7 @@ function why() {
                     <div className="flex items-center w-full h-full bg-gray-100 md:w-3/5">
                         <div className="p-12 md:pr-24 md:pl-16 md:py-12">
                             <h2 className='sub-heading'>Experience</h2>
-                            <p className="text-gray-600">BHE TECHNICAL SERVICES (PVT) LTD was incorporated in 1997, and started trading in Zimbabwe in 2002.</p>
+                            <p className="text-gray-600">BHE Technical Services (PVT) LTD was incorporated in 1997, and started trading in Zimbabwe in 2002.</p>
                             <Link to='/about' className="flex items-baseline mt-3 text-primary-green-600 hover:text-primary-green-900 focus:text-primary-green-900" href="">
                                 <span>Learn more about our work</span>
                                 <span className="ml-1 text-xs">&#x279c;</span>
