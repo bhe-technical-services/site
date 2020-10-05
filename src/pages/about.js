@@ -1,8 +1,8 @@
 import React from "react";
-
+import {CheckSquare} from 'react-feather'
+import Team from "../components/About/team";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
 
 function AboutPage() {
   return (
@@ -13,25 +13,68 @@ function AboutPage() {
         description="this is the about page"
       />
 
-      <section className="flex flex-col items-center md:flex-row">
-        <div className="md:w-2/3 md:mr-8">
-          <blockquote className="pl-4 font-serif leading-loose text-justify border-l-4 border-gray-900">
-            The point is... to live one&apos;s life in the full complexity of
-            what one is, which is something much darker, more contradictory,
-            more of a maelstrom of impulses and passions, of cruelty, ecstacy,
-            and madness, than is apparent to the civilized being who glides on
-            the surface and fits smoothly into the world.
-          </blockquote>
-
-          <cite className="block mt-4 text-xs font-bold text-right uppercase">
-            – Thomas Nagel
-          </cite>
-        </div>
-
-        <figure className="w-2/3 md:w-1/3">
-          <img alt="A dog relaxing" src={dogIllustration} />
-        </figure>
+      <section className="relative px-0 py-20 xl:px-20 min-w-screen animation-fade animation-delay">
+          <div className="container px-10 mx-auto sm:px-0">
+              <div className="sm:flex">
+                  <div className="flex-1 mr-12">
+                      <div className="main-heading">Get to know us more</div>
+                      <div className="mt-10">
+                          <div className="flex">
+                              <div className="flex-shrink">
+                                  <CheckSquare className="w-10 stroke-current text-primary-green-500"/>
+                              </div>
+                              <div className="flex-grow ml-5">
+                                  <div className="sub-heading">Experience</div>
+                                  <p className="mt-5 leading-7 text-gray-700 text-md">
+                                      BHE is a Zimbabwean engineering service, based in Bulawayo. We have been in operation since 2002, 
+                                      giving us 18 years of experience as a leading-edge player in our field. We have a dedicated staff of  
+                                      proven professionals, providing trustworthy and memorable service. With values of commitment and 
+                                      excellence, BHE is a known producer of results.
+                                  </p>
+                              </div>
+                          </div>
+                          <div className="flex mt-5">
+                              <div className="flex-shrink">
+                                <CheckSquare className="w-10 stroke-current text-primary-green-500"/>
+                              </div>
+                              <div className="flex-grow ml-5">
+                                  <div className="sub-heading">Scalable Team</div>
+                                  <p className="mt-5 leading-7 text-gray-700 text-md">
+                                    The Fitter and Boilermaker and their assistants are contract workers,
+                                    participating only when the company has maintenance or project
+                                    work with our customers e.g. shutdown maintenance outages,
+                                    installations or any engineering related work within our scope
+                                    that may arise at any given time.
+                                  </p>
+                              </div>
+                          </div>
+                          <div className="flex mt-5">
+                              <div className="flex-shrink">
+                                <CheckSquare className="w-10 stroke-current text-primary-green-500"/>
+                              </div>
+                              <div className="flex-grow ml-5">
+                                  <div className="sub-heading">sub-heading</div>
+                                  <p className="mt-5 leading-7 text-gray-700 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div className="px-10 mt-20 sm:flex-1 sm:mt-0 sm:px-0 sm:mt-48 lg:mt-0">
+                      <div className="grid grid-cols-2 gap-5">
+                          <div className="col-span-1">
+                              <img className="min-w-full shadow-md" width="245" height="330" src="https://picsum.photos/245/330?grayscale" />
+                              <img className="min-w-full mt-5 shadow-md" width="245" height="245" src="https://picsum.photos/245/245?grayscale" />
+                          </div>
+                          <div className="col-span-1 pt-10">
+                              <img className="min-w-full shadow-md" width="240" height="240" src="https://picsum.photos/240/240?grayscale" />
+                              <img className="min-w-full mt-5 shadow-md" width="245" height="335" src="https://picsum.photos/245/335?grayscale" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </section>
+      <Team/>
     </Layout>
   );
 }

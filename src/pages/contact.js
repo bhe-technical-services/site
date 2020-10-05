@@ -50,10 +50,10 @@ function ContactPage() {
                 <div className="flex items-center justify-center w-full p-10 bg-white md:w-2/3">
                     <form className="w-full" onSubmit="return false">
                         <div className="pb-3">
-                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Email Address" name="email" value="" />
+                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Name" name="name" value="" />
                         </div>
                         <div className="py-3">
-                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Subject" name="subject" value="" />
+                            <input className="w-full px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" type="text" placeholder="Email" name="email" value="" />
                         </div>
                         <div className="py-3">
                             <textarea row="4" className="w-full h-40 px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" name="message" placeholder="Your message here..."></textarea>
