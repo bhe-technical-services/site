@@ -13,21 +13,22 @@ console.log(product)
   <section className="overflow-hidden text-gray-500 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap mx-auto lg:w-4/5">
-    <img alt={product.name} className="object-cover object-center w-full h-64 rounded lg:w-1/2 lg:h-auto" src={product.image[0].node.childImageSharp.fluid.src}/>      {/* this Gatsby-image component one isn't working yet*/}
+    <img alt={product.name} className="object-cover object-center w-full h-64 rounded lg:w-1/2 lg:h-auto" src={product.image[0].node.childImageSharp.fluid.src}/>
+      {/* this Gatsby-image component one isn't working yet*/}
       {/* <Img className='inline-block w-56' fluid={product.image.node.childImageSharp.fluid.src} />  */}
       <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
         {/* <h2 className="text-sm tracking-widest text-gray-600 title-font">{product.manufacturer.name}</h2> */}
-        <h1 className="mb-5 main-heading">{product.name}</h1>
+        <h1 title='product name' className="mb-5 main-heading">{product.name}</h1>
         <h3 className=' sub-heading'>Manufacturers:</h3>
-        <div className='container flex mb-5 space-x-2'>
+        <div className='container flex mb-5 space-x-3'>
           {
-            product.manufacturer? product.manufacturer.map(manu => <span className='border-b-4 border-primary-green-500' key={manu.name}>{manu.name}</span>) : ''
+            product.manufacturer? product.manufacturer.map(manu => <span title='manufacturer name' className='border-b-4 border-primary-green-500' key={manu.name}>{manu.name}</span>) : ''
           }
         </div>
         <div className="flex mb-5">
-            <span className="text-2xl font-medium text-writing-gray title-font">{product.priceRange}</span>
+            <span title='price range' className="text-2xl font-medium text-writing-gray title-font">{product.priceRange}</span>
         </div>
-        <p className="leading-relaxed">{product.description}</p>
+        <p title='product description' className="leading-relaxed">{product.description}</p>
       </div>
     </div>
   <div className="flex mx-auto lg:w-4/5">
@@ -43,6 +44,7 @@ console.log(product)
             <input className='my-2' placeholder="Name" type="text" name="name"/>
             <input className='my-2' placeholder="Email" type="email" name="email"/>
             <input className='my-2' min="1" placeholder="Quantity" type="number" name="quantity"/>
+            <textarea row="4" className="h-40" name="message" placeholder="Your message here..."></textarea>
             <button className="flex items-center justify-center w-full px-6 py-2 mx-auto my-2 text-lg font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent md:w-2/6 bg-primary-green-500 hover:bg-primary-green-600 focus:outline-none focus:border-primary-green-700 focus:shadow-outline-indigo md:py-3 md:text-lg md:px-8" type='submit'>Submit</button>
             {/* <p className="mt-3 text-xs text-gray-500">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p> */}
         </form>
