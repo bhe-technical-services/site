@@ -2,12 +2,18 @@ import React from 'react'
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 function Products() {
     const {gcms: {productCategories}} = useStaticQuery(pageQuery)
     console.log(productCategories)
     return (
         <Layout>
+          <SEO
+            keywords={[`Engineering`, `BHE`, `BTS`, `Equipment`, `Spares`]}
+            title="Products"
+            description="Showcase of our wide range of equipment, spares and engineering services available."
+          />
             <div className='container px-5 py-24 mx-auto'>
             <h2 className="mb-10 underline main-heading">
                 Categories

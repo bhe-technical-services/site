@@ -8,9 +8,9 @@ function AboutPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`about`, `team`, `experience`]}
         title="About"
-        description="this is the about page"
+        description="Get to know us more"
       />
 
       <section className="relative px-0 pt-20 pb-0 xl:px-20 min-w-screen animation-fade animation-delay">

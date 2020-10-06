@@ -8,9 +8,9 @@ function ContactPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`bts`, `contact`, `address`, `phone`]}
         title="Contact"
-        description="this is the contact page"
+        description="You can find our contact info below or you can feel free to leave us a quick message in the form."
       />
       <section className="relative py-6 md:pt-20 min-w-screen animation-fade animation-delay">
         <div className="container h-full max-w-5xl mx-auto overflow-hidden sm:shadow">
