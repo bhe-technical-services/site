@@ -60,7 +60,7 @@ function ContactPage() {
                             <input className="" type="text" placeholder="Email" name="email"/>
                         </div>
                         <div className="py-3">
-                            <textarea row="4" className="w-full h-40 px-5 py-3 border border-gray-400 outline-none focus:shadow-outline" name="message" placeholder="Your message here..."></textarea>
+                            <textarea row="4" className="h-40" name="message" placeholder="Your message here..."></textarea>
                         </div>
                         <div className="pt-3">
                             <button className="flex items-center justify-center w-full px-6 py-2 text-lg font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent md:w-2/6 bg-primary-green-500 hover:bg-primary-green-600 focus:outline-none focus:border-primary-green-700 focus:shadow-outline-green md:py-3 md:text-lg md:px-8" type="submit">
