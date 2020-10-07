@@ -14,7 +14,7 @@ console.log(product)
         keywords={product.manufacturer? product.manufacturer.map(manu => manu.name) : ''}
         title={product.name}
         description={product.description}
-        image={product.image[0].url}
+        image={product.image[0].node.childImageSharp.fluid.src}
       />
     <section className="overflow-hidden text-gray-500 body-font">
     <div className="container px-5 py-24 mx-auto">

@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link  } from 'gatsby';
 import React from 'react'
 import Layout from "../components/layout";
 import Img from 'gatsby-image';
+import SEO from '../components/seo';
 
 export const pageQuery = graphql`
 query CategoryQuery($slug: String) {
@@ -38,6 +39,10 @@ const category = ( { data: {gcms: { productCategory }, }}) => {
     const products = productCategory.products
     return (
         <Layout>
+          <SEO
+            title={productCategory.name}
+            description={`All ${productCategory.name} in stock`}
+          />
             <div className='container px-5 py-24 mx-auto'>
             <h2 className="mb-10 underline main-heading">
                 {productCategory.name}
