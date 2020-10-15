@@ -45,10 +45,11 @@ BHE Technical services website
 - [cml](https://www.cml.uk.com/) - inspiring bits of design
 - [Coffman](https://www.coffman.com/) - nice sharp edges. icons feel a bit thin & lonely though. Mixture of rounded buttons with sharp surroundings not sitting well. Their services page is interesting though.
 ## SEO component
-On the previous Gatsby site, I had issues with the seo component, specified [here](https://www.goosebumps.co.zw/react-helmet-struggle). <br>
+On the previous Gatsby site, I had issues with the seo component, specified [here](https://www.goosebumps.co.zw/react-helmet-struggle). - This issue has since been fixed. <br>
 This repo has a working example, and it works in a similar manner. 
 - Default values are set in `gatsby-config.js`, it is getting the image from the static folder `./static/images/bhe-logo.jpg`.
 - The url set in `gatsby-config.js` must be changed with the domain name, manually🙄, if the SEO component is to work as intended.
+- 
 
 
 
