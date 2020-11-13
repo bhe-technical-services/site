@@ -54,7 +54,7 @@ const category = ( { data: {gcms: { productCategory }, }}) => {
                                 <Img className="block object-cover object-center w-full h-full" fluid={product.image[0].node.childImageSharp.fluid} />
                             </Link>
                                 <div className="mt-4">
-                                    <h2 className="text-lg font-medium text-writing-black title-font">{product.name}</h2>
+                                    <h2 className="text-lg font-bold text-writing-black title-font">{product.name}</h2>
                                 </div>
                         </div>
                     ))}
