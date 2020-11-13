@@ -34,7 +34,7 @@ function ContactPage() {
                         </div>
                         <div className="flex-grow ml-10 md:ml-5">
                             <div className="text-base font-medium mb-">Email</div>
-                            <span className="text-gray-500 text-md"> <a href="mailto:sales@bhe.co.zw">sales@bhe.co.zw</a></span>
+                            <span className="text-gray-500 text-md"> <a href="mailto:cbhebhe@bhetechservices.com">cbhebhe@bhetechservices.com</a></span>
                         </div>
                     </div>
                     <div className="flex items-start py-3">
