@@ -1,16 +1,14 @@
-// /* eslint-disable */
+/* eslint-disable */
 import React from "react";
+import PropTypes from 'prop-types'
 import { graphql, useStaticQuery, Link } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-function Products() {
-  const {
-    gcms: { productCategories },
-  } = useStaticQuery(pageQuery);
-  const { featuredProducts } = useStaticQuery(pageQuery);
-  console.log(featuredProducts);
+function Products({ data}) {
+  const { featuredProducts, gcms: {productCategories}} = data
+  console.log(productCategories);
   return (
     <Layout>
       <SEO
@@ -79,13 +77,13 @@ function Products() {
   );
 }
 
-// Products.PropTypes = {
-//   data: PropTypes.object,
-// };
+Products.PropTypes = {
+  data: PropTypes.object,
+};
 
 export default Products;
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   {
     gcms {
       productCategories {
