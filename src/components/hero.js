@@ -5,6 +5,7 @@ import Header from './header/header'
 // import {Link} from 'gatsby'
 import Img from 'gatsby-image'
 import {  graphql , useStaticQuery} from "gatsby"
+import icon from '../images/bhe-logo-removebg.png'
 import PropTypes from 'prop-types';
 // import Feature from "./buttons/PrimaryButton"
 import PrimaryButton from "./buttons/PrimaryButton"
@@ -20,11 +21,11 @@ function Hero() {
             childImageSharp {
                 fluid(maxWidth: 1000, quality: 100) {
                     ...GatsbyImageSharpFluid
-                  }
-              }
-          }
-      }
-      `)
+                }
+            }
+        }
+    }
+    `)
     console.log(data)
     
     return (
@@ -39,11 +40,16 @@ function Hero() {
 
                     <main className="max-w-screen-xl px-4 pt-10 mx-auto sm:pt-12 sm:px-6 md:pt-16 lg:pt-28 lg:px-8 xl:pt-36">
                         <div className="sm:text-center lg:text-left">
-                        <h2 className="main-heading">
-                            BHE Technical
-                            <br className="xl:hidden"/>
-                            <span className="text-primary-green-600">services</span>
-                        </h2>
+                        <div className='flex flex-row items-center justify-center text-center'>
+                            <div className='flex items-center justify-center w-16 mr-2 md:w-20 md:mr-4'>
+                                <img className='w-full ' src={icon} alt="BTS Technical Services logo"/>
+                            </div>
+                            <h2 className="main-heading">
+                                BHE Technical
+                                <br />
+                                <span className="">services</span>
+                            </h2>
+                        </div>
                         <p className="mt-3 text-base text-writing-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                             Provision of equipment, spares and engineering services to the mining, industrial and agricultural sectors in the Sub-Saharan Region.
                         </p>
