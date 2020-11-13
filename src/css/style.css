@@ -7,5 +7,6 @@ textarea{@apply w-full px-5 py-3 border-none shadow-xs outline-none focus:shadow
 .bullseye{@apply flex flex-col items-center justify-center;}
 .main-heading{@apply text-4xl font-extrabold leading-10 tracking-tight text-writing-black sm:text-5xl sm:leading-none md:text-6xl;}
 .sub-heading{@apply mb-2 text-2xl font-medium;}
+.card { min-width: 18rem;}
 /*! purgecss end ignore */
 @tailwind utilities;
