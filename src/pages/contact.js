@@ -39,7 +39,7 @@ function ContactPage() {
                     </div>
                     <div className="flex items-start py-3">
                         <div className="flex-shrink">
-                            <MapPin className="w-8 h-8 mt-1 text-gray-700"/>
+                            <a href="https://goo.gl/maps/fyX9J9oqnRRw85Sj8" target='_blank' rel='noopener noreferrer'><MapPin className="w-8 h-8 mt-1 text-gray-700"/></a>
                         </div>
                         <div className="flex-grow ml-10 md:ml-5">
                             <div className="text-base font-medium">Address</div>

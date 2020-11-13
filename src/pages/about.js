@@ -1,6 +1,5 @@
 import React from "react";
 import { Clock, Maximize2 } from "react-feather";
-import Team from "../components/About/team";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -41,7 +40,7 @@ function AboutPage() {
                     <Maximize2 className="w-10 mt-2 stroke-current text-primary-green-500" />
                   </div>
                   <div className="flex-grow ml-5">
-                    <h2 className="sub-heading">Scalable Team</h2>
+                    <h2 className="sub-heading">Team</h2>
                     <p className="mt-5 leading-7 text-gray-700 text-md">
                       The Fitter and Boilermaker and their assistants are
                       contract workers, participating only when the company has
@@ -61,13 +60,13 @@ function AboutPage() {
                     className="min-w-full shadow-md"
                     width="245"
                     height="330"
-                    src="https://picsum.photos/245/330?grayscale"
+                    src="https://images.unsplash.com/photo-1581094374631-2154f20c2726?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
                   />
                   <img
                     className="min-w-full mt-5 shadow-md"
                     width="245"
                     height="245"
-                    src="https://picsum.photos/245/245?grayscale"
+                    src="https://images.unsplash.com/photo-1581092154055-8a5b14307eb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                   />
                 </div>
                 <div className="col-span-1 pt-10">
@@ -75,13 +74,13 @@ function AboutPage() {
                     className="min-w-full shadow-md"
                     width="240"
                     height="240"
-                    src="https://picsum.photos/240/240?grayscale"
+                    src="https://cdn.pixabay.com/photo/2017/10/26/14/28/welding-2891275_960_720.jpg"
                   />
                   <img
                     className="min-w-full mt-5 shadow-md"
                     width="245"
                     height="335"
-                    src="https://picsum.photos/245/335?grayscale"
+                    src="https://cdn.pixabay.com/photo/2017/10/20/12/40/surveying-equipment-2871079_960_720.jpg"
                   />
                 </div>
               </div>
@@ -89,7 +88,6 @@ function AboutPage() {
           </div>
         </div>
       </section>
-      <Team />
     </Layout>
   );
 }
