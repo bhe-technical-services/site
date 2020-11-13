@@ -1,7 +1,7 @@
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
     const {
       data: {
-        gcms: { products, productCategories },
+        gcms: { products, productCategories, productTypes },
       },
     } = await graphql(`
       {
@@ -11,6 +11,9 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
             slug
           }
           productCategories {
+            slug
+          }
+          productTypes {
             slug
           }
         }
@@ -31,6 +34,14 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       createPage({
         path: `/products/categories/${slug}`,
         component: require.resolve(`./src/templates/categoryProducts.js`),
+        context: { slug },
+      })
+    );
+
+    productTypes.forEach(({ slug }) =>
+      createPage({
+        path: `/products/type/${slug}`,
+        component: require.resolve(`./src/templates/productTypes.js`),
         context: { slug },
       })
     );

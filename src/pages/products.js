@@ -7,8 +7,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 function Products({ data}) {
-  const { featuredProducts, gcms: {productCategories}} = data
-  console.log(productCategories);
+  const { featuredProducts, gcms: {productTypes}} = data
+  console.log(productTypes);
   return (
     <Layout>
       <SEO
@@ -23,7 +23,7 @@ function Products({ data}) {
         <h2 className="mb-10 underline main-heading">Featured Products</h2>
         <div
           id="featuredProductSlider"
-          className="flex flex-no-wrap w-full overflow-x-auto scrolling-touch"
+          className="flex flex-no-wrap w-full overflow-x-auto scrolling-touch slider"
         >
         {/* <div  className="flex px-4 mb-4"> */}
           {featuredProducts.products.map((product) => (
@@ -47,16 +47,16 @@ function Products({ data}) {
           {/* </div> */}
         </div>
       </section>
-      <section className="container px-5 py-24 mx-auto">
-        <h2 className="mb-10 underline main-heading">Categories</h2>
+      <section className="px-5 py-24 mx-auto ">
+        <h2 className="mb-10 underline main-heading">Product Types</h2>
         <div className="flex flex-wrap ">
-          {productCategories.map((category) => (
+          {productTypes.map((category) => (
             <div
-              className="w-full p-4 lg:w-1/4 md:w-1/2"
+              className="w-full p-4 lg:w-1/4 md:w-1/2 card"
               key={category.slug}
             >
               <Link
-                to={`/products/categories/${category.slug}`}
+                to={`/products/type/${category.slug}`}
                 className="relative block h-48 overflow-hidden rounded"
               >
                 <Img
@@ -86,7 +86,7 @@ export default Products;
 export const pageQuery = graphql`
   {
     gcms {
-      productCategories {
+      productTypes {
         name
         slug
         featureImage {
