@@ -16,39 +16,8 @@ function Products({ data}) {
         title="Products"
         description="Showcase of our wide range of equipment, spares and engineering services available."
       />
-      <section
-        id="featuredProductContainer"
-        className="container px-5 py-24 mx-auto"
-      >
-        <h2 className="mb-10 underline main-heading">Featured Products</h2>
-        <div
-          id="featuredProductSlider"
-          className="flex flex-no-wrap w-full overflow-x-auto scrolling-touch slider"
-        >
-        {/* <div  className="flex px-4 mb-4"> */}
-          {featuredProducts.products.map((product) => (
-            <div className="w-full p-4 lg:w-1/4 md:w-1/2 card" key={product.slug}>
-              <Link
-                to={`/products/${product.slug}`}
-                className="relative block h-48 overflow-hidden rounded"
-              >
-                <Img
-                  className="block object-cover object-center w-full h-full min-w-30"
-                  fluid={product.image[0].node.childImageSharp.fluid}
-                />
-              </Link>
-              <div className="mt-4">
-                <h2 className="text-lg font-bold text-writing-black title-font">
-                  {product.name}
-                </h2>
-              </div>
-            </div>
-          ))}
-          {/* </div> */}
-        </div>
-      </section>
       <section className="px-5 py-24 mx-auto ">
-        <h2 className="mb-10 underline main-heading">Product Types</h2>
+        <h2 className="mb-10 underline main-heading">Product Categories</h2>
         <div className="flex flex-wrap ">
           {productTypes.map((category) => (
             <div

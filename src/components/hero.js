@@ -47,7 +47,7 @@ function Hero() {
                             <h2 className="main-heading">
                                 BHE Technical
                                 <br />
-                                <span className="">services</span>
+                                <span className="">Services</span>
                             </h2>
                         </div>
                         <p className="mt-3 text-base text-writing-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
