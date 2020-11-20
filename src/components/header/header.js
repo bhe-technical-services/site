@@ -22,23 +22,23 @@ function Header() {
   return (
     <>
       <header className="relative px-4 pt-6 sm:px-6 lg:px-8">
-                    <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
-                    <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                        <div className="flex items-center justify-between w-full md:w-auto">
-                        <div className="flex items-center -mr-2 md:hidden">
-                            <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" id="main-menu" aria-label="Main menu" aria-haspopup="true">
-                            <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                            </button>
+                    <nav className="relative flex items-center justify-start sm:h-10">
+                        <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                            <div className="flex items-center justify-end w-full md:w-auto">
+                            <div className="flex items-center -mr-2 md:hidden">
+                                <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" id="main-menu" aria-label="Main menu" aria-haspopup="true">
+                                <svg className="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                                </button>
+                            </div>
+                            </div>
                         </div>
+                        <div className="hidden md:block md:ml-10 md:pr-4">
+                            {navLinks.map(({name, path}) => (
+                                <Link to={path} key={path} className="mr-8 font-bold text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">{name}</Link>
+                            ))}
                         </div>
-                    </div>
-                    <div className="hidden md:block md:ml-10 md:pr-4">
-                        {navLinks.map(({name, path}) => (
-                            <Link to={path} key={path} className="mr-8 font-bold text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">{name}</Link>
-                        ))}
-                    </div>
                     </nav>
                 </header>
 

@@ -18,10 +18,10 @@ function Products({ data}) {
       />
       <section className="px-5 py-24 mx-auto ">
         <h2 className="mb-10 underline main-heading">Product Categories</h2>
-        <div className="flex flex-wrap ">
+        <div className="flex flex-wrap">
           {productTypes.map((category) => (
             <div
-              className="w-full p-4 lg:w-1/4 md:w-1/2 card"
+              className="w-full p-4 lg:w-1/4 md:w-1/2 card lg:min-w-118"
               key={category.slug}
             >
               <Link
@@ -34,7 +34,7 @@ function Products({ data}) {
                 />
               </Link>
               <div className="mt-4">
-                <h2 className="text-lg font-bold text-writing-black title-font">
+                <h2 className="text-xl font-bold text-writing-black title-font">
                   {category.name}
                 </h2>
               </div>
