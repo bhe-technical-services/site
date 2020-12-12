@@ -20,7 +20,7 @@ function ContactPage() {
                     <p className="mt-2 mb-5 text-sm text-gray-600">You can find our contact info below or you can feel free to leave us a quick message in the form.</p>
                     <div className="flex items-start py-3 pt-5">
                         <div className="flex-shrink">
-                          <Phone className="w-8 h-8 mt-1 text-gray-700"/>
+                        <a href="tel:+263292886611"><Phone className="w-8 h-8 mt-1 text-gray-700"/></a>
                         </div>
                         <div className="flex-grow ml-10 md:ml-5">
                             <div className="text-base font-medium mb-">Phone</div>
@@ -30,7 +30,7 @@ function ContactPage() {
                     </div>
                     <div className="flex items-start py-3 pt-5">
                         <div className="flex-shrink">
-                          <Mail className="w-8 h-8 mt-1 text-gray-700"/>
+                            <a href="mailto:cbhebhe@bhetechservices.com"><Mail className="w-8 h-8 mt-1 text-gray-700"/></a>
                         </div>
                         <div className="flex-grow ml-10 md:ml-5">
                             <div className="text-base font-medium mb-">Email</div>
@@ -43,7 +43,7 @@ function ContactPage() {
                         </div>
                         <div className="flex-grow ml-10 md:ml-5">
                             <div className="text-base font-medium">Address</div>
-                            <span className="text-gray-500 text-md">7 Birmingham Rd, Belmont, Bulawayo, Zimbabwe</span>
+                            <a href="https://goo.gl/maps/fyX9J9oqnRRw85Sj8" target='_blank' rel='noopener noreferrer'><span className="text-gray-500 text-md">7 Birmingham Rd, Belmont, Bulawayo, Zimbabwe</span></a>
                         </div>
                     </div>
                 </aside>
