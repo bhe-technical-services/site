@@ -53,7 +53,9 @@ const category = ( { data: {gcms: { productType }, }}) => {
                                 <Img className="block object-cover object-center w-full h-full" fluid={product.featureImage.node.childImageSharp.fluid} />
                             </Link>
                                 <div className="mt-4">
+                                  <Link to={`/products/categories/${product.slug}`}>
                                     <h2 className="text-lg font-bold text-writing-black title-font">{product.name}</h2>
+                                  </Link>
                                 </div>
                         </div>
                     ))}

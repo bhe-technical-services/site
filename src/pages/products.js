@@ -34,9 +34,13 @@ function Products({ data}) {
                 />
               </Link>
               <div className="mt-4">
-                <h2 className="text-xl font-bold text-writing-black title-font">
-                  {category.name}
-                </h2>
+                <Link
+                  to={`/products/type/${category.slug}`}
+                >
+                  <h2 className="text-xl font-bold text-writing-black title-font">
+                    {category.name}
+                  </h2>
+                </Link>
               </div>
             </div>
           ))}
