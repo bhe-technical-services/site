@@ -43,7 +43,7 @@ function ContactPage() {
                         </div>
                         <div className="flex-grow ml-10 md:ml-5">
                             <div className="text-base font-medium">Address</div>
-                            <span className="text-gray-500 text-md">6 Birmingham Rd, Belmont, Bulawayo, Zimbabwe</span>
+                            <span className="text-gray-500 text-md">7 Birmingham Rd, Belmont, Bulawayo, Zimbabwe</span>
                         </div>
                     </div>
                 </aside>

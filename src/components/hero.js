@@ -41,10 +41,10 @@ function Hero() {
                     <main className="max-w-screen-xl px-4 pt-10 mx-auto sm:pt-12 sm:px-6 md:pt-16 lg:pt-28 lg:px-8 xl:pt-36">
                         <div className="sm:text-center lg:text-left">
                         <div className='flex flex-row items-center justify-center text-center'>
-                            <div className='flex items-center justify-center w-16 mr-2 md:w-20 md:mr-4'>
-                                <img className='w-full ' src={icon} alt="BTS Technical Services logo"/>
+                            <div className='flex items-center justify-center w-20 mr-2 md:w-28 md:mr-4'>
+                                <img className='inline-block w-full h-full' src={icon} alt="BTS Technical Services logo"/>
                             </div>
-                            <h2 className="main-heading">
+                            <h2 className="font-serif main-heading text">
                                 BHE Technical
                                 <br />
                                 <span className="">Services</span>
