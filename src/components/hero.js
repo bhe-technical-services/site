@@ -17,7 +17,7 @@ import PrimaryButton from "./buttons/PrimaryButton"
 function Hero() {
     const data = useStaticQuery(graphql`
     query {
-        file(relativePath: { eq: "hero.jpg" }) {
+        file(relativePath: { eq: "herox.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000, quality: 100) {
                     ...GatsbyImageSharpFluid
@@ -71,8 +71,8 @@ function Hero() {
 
 Hero.propTypes = {
     data: PropTypes.object,
-  };
-  
+};
+
 
   
 //   export const query = graphql`
