@@ -25,12 +25,15 @@ console.log(product)
         <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
           {/* <h2 className="text-sm tracking-widest text-gray-600 title-font">{product.manufacturer.name}</h2> */}
           <h1 title='product name' className="mb-5 main-heading">{product.name}</h1>
-          <h3 className=' sub-heading'>Manufacturers:</h3>
-          <div className='container flex mb-5 space-x-3'>
-            {
-              product.manufacturer? product.manufacturer.map(manu => <span title='manufacturer name' className='border-b-4 border-primary-green-500' key={manu.name}>{manu.name}</span>) : ''
-            }
-          </div>
+          {product.manufacturer ? 
+            <>
+              <h3 className=' sub-heading'>Manufacturers:</h3>
+              <div className='container flex mb-5 space-x-3'>
+                <span title='manufacturer name' className='border-b-4 border-primary-green-500' key={manu.name}>{manu.name}</span>
+              </div>
+            </>
+          : '' 
+          }
           <div className="flex mb-5">
               <span title='price range' className="text-2xl font-medium text-writing-gray title-font">{product.priceRange}</span>
           </div>
