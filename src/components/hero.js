@@ -17,7 +17,7 @@ import PrimaryButton from "./buttons/PrimaryButton"
 function Hero() {
     const data = useStaticQuery(graphql`
     query {
-        file(relativePath: { eq: "herox.jpg" }) {
+        file(relativePath: { eq: "hero.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000, quality: 100) {
                     ...GatsbyImageSharpFluid

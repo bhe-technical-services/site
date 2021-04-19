@@ -5,7 +5,7 @@ import festo from '../../images/festo.jpg'
 function agencies() {
     return (
         <section id='agencies' className='text-writing-black'>
-            <h2 className='mb-5 text-center md:mb-10 main-heading'>Agencies</h2>
+            <h2 className='mb-5 text-center md:mb-10 main-heading'>Official Agents For</h2>
 
             <div id="Festo-wrapper" className='flex flex-col mb-10 md:flex-row-reverse py-15'>
                 <div id="image-wrapper" className='relative md:w-1/2'>

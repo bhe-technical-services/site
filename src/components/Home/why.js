@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 function why() {
     return (
         <section id='why' className='text-writing-black'>
-            <h1 className='mb-5 text-center md:mb-10 main-heading'>Why shop with us?</h1>
+            <h1 className='mb-5 text-center md:mb-10 main-heading'>Why buy from us?</h1>
 
             <div className='flex flex-col p-10 space-y-24'>
                 <div className="relative items-center bg-gray-100 shadow-xl md:flex min-h-19rem" >

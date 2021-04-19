@@ -1,5 +1,5 @@
 import React from "react";
-import { Clock, Maximize2 } from "react-feather";
+// import { Clock, Maximize2 } from "react-feather";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -16,42 +16,56 @@ function AboutPage() {
         <div className="container px-10 mx-auto sm:px-0">
           <div className="sm:flex">
             <div className="flex-1 mr-12">
-              <h1 className="main-heading">Get to know us more</h1>
-              <div className="mt-10">
-                <div className="flex">
-                  <div className="flex-shrink">
-                    <Clock className="w-10 mt-2 stroke-current text-primary-green-500" />
-                  </div>
-                  <div className="flex-grow ml-5">
-                    <h2 className="sub-heading">Experience</h2>
-                    <p className="mt-5 leading-7 text-gray-700 text-md">
-                      B.H.E Technical Services is a Zimbabwean engineering
-                      service, based in Bulawayo. We have been in operation
-                      since 2002, giving us 18 years of experience as a
-                      leading-edge player in our field. We have a dedicated
-                      staff of proven professionals, providing trustworthy and
-                      memorable service. With values of commitment and
-                      excellence, BHE is a known producer of results.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex mt-5">
-                  <div className="flex-shrink">
-                    <Maximize2 className="w-10 mt-2 stroke-current text-primary-green-500" />
-                  </div>
-                  <div className="flex-grow ml-5">
-                    <h2 className="sub-heading">Team</h2>
-                    <p className="mt-5 leading-7 text-gray-700 text-md">
-                      The Fitter and Boilermaker and their assistants are
-                      contract workers, participating only when the company has
-                      maintenance or project work with our customers e.g.
-                      shutdown maintenance outages, installations or any
-                      engineering related work within our scope that may arise
-                      at any given time.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <section className='about-section'>
+                <h1 className="main-heading">About Us</h1>
+                <p className="mt-5 leading-7 text-gray-700 text-md">B H E TECHNICAL SERVICES was founded in 1997, and started operations in 2003. The company 
+                  has become a key player in major economic industries by providing the following but not limited 
+                  to:
+                  <ul className='my-3 list-disc'>
+                    <li>Industrial transmission couplings; including fluid coupling</li>
+                    <li>Bearings </li>
+                    <li>Pulleys and V-belts </li>
+                    <li>Sprockets and chains </li>
+                    <li>Industrial and mining valves</li>
+                    <li>Pipes and fittings</li>
+                    <li>Steel products</li>
+                    <li>Engineering services (Gearbox reconditioning, hydraulics and Pneumatic design and installations)</li>
+                    <li>Industrial tools and accessories</li>
+                  </ul>
+                  We always strive to add values to our customers through provision of quality and timeous services.
+                </p>
+              </section>
+              <section className='about-section'>
+                <h2 className="main-heading">Our Vision</h2>
+                <p className="mt-5 leading-7 text-gray-700 text-md">A leader in the provision of equipment, spares and engineering services to the Mining, Industrial and Agricultural sectors. </p>
+              </section>
+              <section className='about-section'>
+                <h2 className="main-heading">Our Mission</h2>
+                <p className="mt-5 leading-7 text-gray-700 text-md">Efficient supply of quality spares, equipment and engineering services to the Mining, Industrial and Agricultural sectors to enhance productivity.</p>
+              </section>
+              <section className='about-section'>
+                <h2 className="main-heading">Our Values</h2>
+                <ul className="my-3 mt-5 leading-7 text-gray-700 list-disc text-md">
+                  <li>Efficiency</li>
+                  <li>Commitment</li>
+                  <li>Quality </li>
+                  <li>Consistency </li>
+                  <li>Reliability </li>
+                  <li>Integrity </li>
+                </ul>
+              </section>
+              <section className='about-section'>
+                <h2 className="main-heading">Key Industries Serviced</h2>
+                <ul className="my-3 mt-5 leading-7 text-gray-700 list-disc text-md">
+                  <li>Mining  </li>
+                  <li>Power generation</li>
+                  <li>Agriculture   </li>
+                  <li>Cement  </li>
+                  <li>Manufacturing   </li>
+                  <li>Local Authorities  </li>
+                </ul>
+              </section>
+
             </div>
             <div className="px-10 mt-20 sm:flex-1 sm:mt-0 sm:px-0 sm:mt-48 lg:mt-0">
               <div className="grid grid-cols-2 gap-5">

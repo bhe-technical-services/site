@@ -29,7 +29,7 @@ console.log(product)
             <>
               <h3 className=' sub-heading'>Manufacturers:</h3>
               <div className='container flex mb-5 space-x-3'>
-                <span title='manufacturer name' className='border-b-4 border-primary-green-500' key={manu.name}>{manu.name}</span>
+                {product.manufacturer.map(manu =><span title='manufacturer name' className='border-b-4 border-primary-green-500' key={manu.name}>{manu.name}</span>)}
               </div>
             </>
           : '' 
