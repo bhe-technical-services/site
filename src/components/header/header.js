@@ -4,6 +4,7 @@ import { Transition } from '@tailwindui/react'
 import icon from '../../images/bhe-logo-removebg.png'
 import {navLinks} from './navLinks'
 import {Link} from 'gatsby'
+import HeaderDropDown from "./HeaderDropDown";
 
 console.log(navLinks)
 function Header() {
@@ -37,7 +38,8 @@ function Header() {
                         <div className="hidden md:block md:ml-10 md:pr-4">
                             {navLinks.map(({name, path}) => (
                                 <Link to={path} key={path} className="mr-8 font-bold text-gray-500 transition duration-150 ease-in-out hover:text-gray-900">{name}</Link>
-                            ))}
+                                ))}
+                                <HeaderDropDown/>
                         </div>
                     </nav>
                 </header>
@@ -60,9 +62,9 @@ function Header() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
                 >
-                    <header className="absolute inset-x-0 top-0 z-20 p-2 transition origin-top-right transform md:hidden">
-                        <div className="rounded-lg shadow-md">
-                        <div className="overflow-hidden bg-white rounded-lg shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                    <header className="absolute inset-x-0 top-0 z-20 h-screen p-2 overflow-y-scroll transition origin-top-right transform md:hidden">
+                        <div className="inline-block w-full h-full rounded-lg shadow-md">
+                        <div className="inline-block w-full h-full overflow-hidden bg-white rounded-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                             <div className="flex items-center justify-between px-5 pt-4">
                             <Link to="/" aria-label="Home">
                                 <img className="w-auto h-8" src={icon} alt="BHE logo"/>
@@ -75,10 +77,11 @@ function Header() {
                                 </button>
                             </div>
                             </div>
-                                <div className="px-2 pt-2 pb-3 ">
-                                {navLinks.map(({name, path}) => (
-                                    <Link to={path} key={path} className="block px-3 py-2 mb-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">{name}</Link>
-                                ))}
+                                <div className="px-2 pt-2 pb-3 text-right">
+                                    {navLinks.map(({name, path}) => (
+                                        <Link to={path} key={path} className="block px-3 py-2 mb-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50">{name}</Link>
+                                        ))}
+                                    <HeaderDropDown />
                                 </div>
                         </div>
                         </div>

@@ -1,9 +1,5 @@
 // See https://tailwindcss.com/docs/configuration for details
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
   experimental: {
     applyComplexClasses: true,
   },
@@ -98,6 +94,12 @@ module.exports = {
         },
       },
     },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    }
   },
   variants: {},
   // https://github.com/tailwindcss/custom-forms

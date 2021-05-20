@@ -5,10 +5,10 @@ section {
   @apply flex flex-col items-center justify-center py-15;
 }
 input {
-  @apply w-full px-5 py-3 shadow-xs outline-none focus:shadow-outline-gray;
+  @apply w-full px-5 py-3 outline-none ring-1 ring-black ring-opacity-5 focus:ring-gray-400;
 }
 textarea {
-  @apply w-full px-5 py-3 border-none shadow-xs outline-none focus:shadow-outline-gray;
+  @apply w-full px-5 py-3 border-none outline-none ring-1 ring-black ring-opacity-5 focus:ring-gray-400;
 }
 .bullseye {
   @apply flex flex-col items-center justify-center;
@@ -29,12 +29,20 @@ textarea {
   width: 12px;
 }
 .slider::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 .slider::-webkit-scrollbar-thumb {
   border-radius: 10px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.primaryButtonStyles {
+  @apply flex items-center justify-center w-full px-6 py-2 text-lg font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent bg-primary-green-500 hover:bg-primary-green-600 focus:outline-none focus:border-primary-green-700 focus:ring-indigo-300 md:py-3 md:text-lg md:px-8;
+}
+.secondaryButtonStyles {
+  @apply flex items-center justify-center w-full px-6 py-2 text-lg font-medium leading-6 transition duration-150 ease-in-out border border-transparent text-primary-green-700 bg-primary-green-300 hover:text-primary-green-700 hover:bg-primary-green-200 focus:outline-none focus:ring-gray-400 focus:border-primary-green-300 md:py-3 md:text-lg md:px-8;
 }
 /*! purgecss end ignore */
 @tailwind utilities;

@@ -16,7 +16,6 @@ module.exports = {
     url: "https://bts-dev.netlify.app",
   },
   plugins: [
-    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
